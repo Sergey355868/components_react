@@ -1,0 +1,17 @@
+.contaner {
+  margin: 100px auto;
+  width: 50%;
+  &__button {
+    margin-right: 40px;
+  }
+}
+.list-sort {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  &__item {
+    font-weight: bold;
+    border-bottom: 2px solid darkgray;
+    padding: 20px 0;
+  }
+}

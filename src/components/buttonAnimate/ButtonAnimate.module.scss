@@ -1,0 +1,48 @@
+.button-animate {
+  padding:  10px 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  &_border {
+    border-radius: 5%;
+    border:2px solid wheat;
+  }
+  &_animate:hover {
+    animation:  800ms btn-shadow linear infinite;
+  }
+  &_shadow {
+    box-shadow: 2px 2px 2px gray;
+    &:active {
+       box-shadow: none;
+       transform: translateY(2px);
+       animation: none;
+    }
+  }
+  &:disabled {
+    transform: none;
+    animation: none;
+    box-shadow:2px 2px 2px gray;
+  }
+  &_theme {
+    color:white;
+    background-color: silver;
+    font-weight: bold;
+  }
+  &__position {
+    display: block;
+    position: relative;
+  }
+  .button-animate__arrow {
+   position: absolute;
+    top:-20px;
+    left:-30px;
+  }
+}
+@keyframes btn-shadow {
+  from {
+    box-shadow:  2px 2px 2px 2px lightgrey;
+  }
+  to {
+    box-shadow:  2px 2px 2px 4px lightgrey;
+  }
+}
